@@ -6,7 +6,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
     <%--<asp:ScriptManagerProxy ID="ScriptManagerProxy1" runat="server" />--%>
 
-    <h2 class="DDSubHeader">Mis tablas</h2>
+    <h2 class="DDSubHeader">Mis tablas PUTITOS</h2>
 
     <br /><br />
 
