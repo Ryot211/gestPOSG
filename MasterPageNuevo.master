@@ -216,7 +216,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a runat="server" href="~/POSG/Reportes.aspx" class="waves-effect waves-dark">
+                                    <a runat="server" href="~/POSG/Menu.aspx" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class="fa fa-university" aria-hidden="true"></i></span>
                                         <span class="pcoded-mtext" data-i18n="nav.basic-components.main">Coordinador</span>
                                         <span class="pcoded-mcaret"></span>
