@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'/>
-    <title>Inicio</title>
+    <title>UTC | POSGRADOS</title>
     <!-- Favicon icon -->
     <link rel="icon" href="~/Styles/Nuevo/assets/images/favicon.ico" type="image/x-icon"/>
     <!-- Google font-->
@@ -44,6 +44,10 @@
             border-left-color: #004289 !important;
             border-top-color: #004289 !important;
         }
+        .pcoded-navbar i {
+            margin-right: 8px; /* Ajusta el valor según la distancia deseada */
+        }
+
     </style>
     <asp:ContentPlaceHolder id="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
@@ -216,7 +220,34 @@
                             <div class="pcoded-inner-navbar main-menu">
                                 <hr />
                                 <ul class="pcoded-item pcoded-left-item" id="ulListMenu" runat="server" item-border="true" item-border-style="none" subitem-border="true">
-                                </ul>
+                              <li>
+                                                <a runat="server" href="~/POSG/Inicio.aspx">
+                                                    <i class="fa fa-dashboard"></i><span>Panel de Control</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a runat="server" href="~/POSG/Reportes.aspx">
+                                                    <i class="fa fa-bar-chart"></i><span>Reportes</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a runat="server" href="~/POSG/Usuarios.aspx">
+                                                    <i class="fa fa-users"></i><span>Gestión de Usuarios</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a runat="server" href="~/POSG/Cursos.aspx">
+                                                    <i class="fa fa-book"></i><span>Gestión de Cursos</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a runat="server" href="~/POSG/Configuraciones.aspx">
+                                                    <i class="fa fa-cogs"></i><span>Configuraciones</span>
+                                                </a>
+                                            </li>
+                                    
+                                    
+                                       </ul>
                             </div>
                         </nav>
                         <div class="pcoded-content">
