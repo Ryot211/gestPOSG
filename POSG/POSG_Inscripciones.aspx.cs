@@ -6,6 +6,8 @@ using System.Web.UI;
 using System.Data.SqlClient;
 using ClassLibraryTesis;
 using System.Web.UI.WebControls;
+using System.Data;
+using System.Configuration; // Para acceder a ConfigurationManager
 
 
 public partial class POSG_POSG_Inscripciones : System.Web.UI.Page
@@ -237,8 +239,10 @@ public partial class POSG_POSG_Inscripciones : System.Web.UI.Page
 
     private void GenerarRelacionNotasYActas(string strid_ins)
     {
-        ConexionDB conexionDb = new ConexionDB();
-        using (SqlConnection conn = conexionDb.GetConnection())
+        // Usar la cadena de conexión desde <connectionStrings>
+        string connectionString = ConfigurationManager.ConnectionStrings["DbConnection"].ConnectionString;
+
+        using (SqlConnection conn = new SqlConnection(connectionString))
         {
             using (SqlCommand cmd = new SqlCommand("ADD_PK_POSG_Notas_POSG_Actas", conn))
             {
@@ -253,11 +257,11 @@ public partial class POSG_POSG_Inscripciones : System.Web.UI.Page
                 }
                 catch (SqlException sqlEx)
                 {
-                    lblMessage.Text = $"Error SQL al generar registro TB_ACT_NOT: {sqlEx.Message}";
+                    lblMessage.Text = string.Format("Error SQL al generar registro TB_ACT_NOT: {0}", sqlEx.Message);
                 }
                 catch (Exception ex)
                 {
-                    lblMessage.Text = $"Error general al generar registro TB_ACT_NOT: {ex.Message}";
+                    lblMessage.Text = string.Format("Error general al generar registro TB_ACT_NOT: {0}", ex.Message);
                 }
                 finally
                 {
@@ -269,7 +273,6 @@ public partial class POSG_POSG_Inscripciones : System.Web.UI.Page
             }
         }
     }
-
 
 
     private void Limpiar()
@@ -303,9 +306,11 @@ public partial class POSG_POSG_Inscripciones : System.Web.UI.Page
 
     protected void gvwDocente_SelectedIndexChanged(object sender, EventArgs e)
     {
-        string nombreCompleto = $"{gvwDocente.SelectedDataKey["strNomb_per"].ToString()} {gvwDocente.SelectedDataKey["strApellidop_per"].ToString()} {gvwDocente.SelectedDataKey["strApellidom_per"].ToString()}";
+        string nombreCompleto = gvwDocente.SelectedDataKey["strNomb_per"].ToString() + " " +
+                         gvwDocente.SelectedDataKey["strApellidop_per"].ToString() + " " +
+                         gvwDocente.SelectedDataKey["strApellidom_per"].ToString();
         txtTutor.Text = nombreCompleto;
+
     }
 
-}
 }
