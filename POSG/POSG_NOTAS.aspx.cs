@@ -130,13 +130,14 @@ public partial class POSG_POSG_NOTAS : System.Web.UI.Page
                 errorMessage += "un nombre de maestría antes de generar el PDF.";
             }
 
-            string script = $@"<script>
-                            Swal.fire({{
-                                title: '¡Error!',
-                                text: '{errorMessage}',
-                                icon: 'error'
-                            }});
-                         </script>";
+            string script = "<script>" +
+                  "Swal.fire({" +
+                  "    title: '¡Error!'," +
+                  "    text: '" + errorMessage + "'," +
+                  "    icon: 'error'" +
+                  "});" +
+                  "</script>";
+
             ScriptManager.RegisterStartupScript(this, GetType(), "NoFiltros", script, false);
             return;
         }
@@ -170,9 +171,10 @@ public partial class POSG_POSG_NOTAS : System.Web.UI.Page
             Font estilo1 = FontFactory.GetFont(FontFactory.TIMES_BOLD, 13);
 
             document.Add(new Paragraph("Universidad Técnica de Cotopaxi ", fontTitle) { Alignment = Element.ALIGN_CENTER, SpacingAfter = 10f });
-            document.Add(new Paragraph($"Nombre de maestría: {nombreMaestria}", fontHeader));
-            document.Add(new Paragraph($"Periodo Académico: {periodoAcademico}", fontHeader) { SpacingAfter = 2f });
-            document.Add(new Paragraph($"REPORTE DE NOTAS ", estilo1) { Alignment = Element.ALIGN_CENTER });
+            document.Add(new Paragraph("Nombre de maestría: " + nombreMaestria, fontHeader));
+            document.Add(new Paragraph("Periodo Académico: " + periodoAcademico, fontHeader) { SpacingAfter = 2f });
+            document.Add(new Paragraph("REPORTE DE NOTAS ", estilo1) { Alignment = Element.ALIGN_CENTER });
+
             document.Add(new Chunk("\n"));
 
             PdfPTable table = new PdfPTable(7);
