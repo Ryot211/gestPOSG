@@ -230,7 +230,7 @@
                                     </a>
                                 </li>
                                 <li class="pcoded-hasmenu">
-                                    <a href="#submenu-estudiantes" data-toggle="collapse" aria-expanded="false" class="waves-effect waves-dark dropdown-toggle">
+                                    <a href="#submenu-estudiantes" data-toggle="collapse" aria-expanded="false" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
                                         <span class="pcoded-mtext">Estudiantes</span>
                                         <span class="pcoded-mcaret"></span>
@@ -247,7 +247,7 @@
                                     </ul>
                                 </li>
                                 <li class="pcoded-hasmenu">
-                                    <a href="#submenu-secretaria" data-toggle="collapse" aria-expanded="false" class="waves-effect waves-dark dropdown-toggle">
+                                    <a href="#submenu-secretaria" data-toggle="collapse" aria-expanded="false" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class="fa fa-user" aria-hidden="true"></i></span>
                                         <span class="pcoded-mtext">Secretaría Académica</span>
                                         <span class="pcoded-mcaret"></span>
