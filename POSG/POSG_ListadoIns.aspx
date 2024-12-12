@@ -63,7 +63,8 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server"></asp:ToolkitScriptManager>
+   <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
     <asp:Label ID="lblUser" runat="server" Visible="false"></asp:Label>
     <div class="container-fluid">
         <div class="alert alert-primary"><i class="fa fa-2x fa-graduation-cap">&nbsp; Detalle inscritos para el proceso de titulación </i></div>

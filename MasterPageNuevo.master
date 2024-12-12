@@ -253,11 +253,11 @@
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                     <ul class="pcoded-submenu collapse list-unstyled" id="submenu-secretaria">
-                                        <li><a href="POSG_Inscripciones.aspx" class="waves-effect waves-dark">
+                                        <li><a href="~/POSG/POSG_Inscripciones.aspx" class="waves-effect waves-dark">
                                             <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                             <span class="pcoded-mtext">Inscripción</span>
                                         </a></li>
-                                        <li><a href="POSG_ListadoIns.aspx" class="waves-effect waves-dark">
+                                        <li><a href="~/POSG/POSG_ListadoIns.aspx" class="waves-effect waves-dark">
                                             <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                             <span class="pcoded-mtext">Listado de Inscritos</span>
                                         </a></li>
