@@ -1,17 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Data;
-using System.Web;
+using System.Web.UI;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
-using System.Web.UI;
-using TesisPosgrados.DataAccess;
 using System.IO;
-using System.Web.UI.WebControls;
+using System.Web;
 using ClassLibraryTesis;
+using TesisPosgrados.DataAccess;
 
-public partial class POSG_POSG_NOTAS : System.Web.UI.Page
+public partial class POSG_NOTAS : System.Web.UI.Page
 {
     private NotasClass _notasDataAccess;
     protected void Page_Load(object sender, EventArgs e)

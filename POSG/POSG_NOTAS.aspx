@@ -1,6 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageNuevo.master" AutoEventWireup="true" CodeFile="POSG_NOTAS.aspx.cs" Inherits="POSG_POSG_NOTAS" %>
-
-<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" Runat="Server">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageNuevo.master" AutoEventWireup="true" CodeFile="POSG_NOTAS.aspx.cs" Inherits="POSG_NOTAS" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <asp:Label ID="lblUser" runat="server" Visible="false"></asp:Label>
@@ -72,5 +71,3 @@
     }
 </script>
 </asp:Content>
-
-

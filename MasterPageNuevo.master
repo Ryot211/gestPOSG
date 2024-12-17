@@ -190,9 +190,9 @@
                                             </a>
                                         </li>
                                         <li class="waves-effect waves-light">
-                                            <asp:LoginStatus ID="HeadLoginStatus" runat="server" class="ti-layout-sidebar-left"
+                                            <%--<asp:LoginStatus ID="HeadLoginStatus" runat="server" class="ti-layout-sidebar-left"
                                                         LogoutText=" Cerrar sesión"
-                                                        LogoutPageUrl="~/academic/public/login.aspx" LogoutAction="Redirect" />
+                                                        LogoutPageUrl="~/academic/public/login.aspx" LogoutAction="Redirect" />--%>
                                         </li>
                                     </ul>
                                 </li>

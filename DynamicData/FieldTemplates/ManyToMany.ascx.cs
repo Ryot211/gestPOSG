@@ -2,8 +2,6 @@
 using System.Collections;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using System.Data.Objects;
-using System.Data.Objects.DataClasses;
 using System.Web.DynamicData;
 using System.Web.UI;
 using System.Web.UI.WebControls;
